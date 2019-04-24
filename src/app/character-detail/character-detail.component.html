@@ -1,0 +1,48 @@
+<div *ngIf="character" class="character-detail-container">
+  <h2>{{character.name | uppercase}}</h2>
+
+  <div class="stats-container">
+    <label class="stat-name-col">Health
+    </label>
+    <input [(ngModel)]="character.baseStats.health" placeholder="health"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.health, 'health')"></div>
+    </div>
+    <label class="stat-name-col">Energy
+    </label>
+    <input [(ngModel)]="character.baseStats.energy" placeholder="energy"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.energy, 'energy')" class="filled"></div>
+    </div>
+    <label class="stat-name-col">Strength
+    </label>
+    <input [(ngModel)]="character.baseStats.strength" placeholder="strength"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.strength, 'strength')" class="filled"></div>
+    </div>
+    <label class="stat-name-col">Toughness
+    </label>
+    <input [(ngModel)]="character.baseStats.toughness" placeholder="toughness"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.toughness, 'toughness')" class="filled"></div>
+    </div>
+    <label class="stat-name-col">Intelligence
+    </label>
+    <input [(ngModel)]="character.baseStats.intelligence" placeholder="intelligence"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.intelligence, 'intelligence')" class="filled"></div>
+    </div>
+    <label class="stat-name-col">Fortitude
+    </label>
+    <input [(ngModel)]="character.baseStats.fortitude" placeholder="fortitude"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.fortitude, 'fortitude')" class="filled"></div>
+    </div>
+    <label class="stat-name-col">Speed
+    </label>
+    <input [(ngModel)]="character.baseStats.speed" placeholder="speed"/>
+    <div class="stat-bar">
+      <div [ngStyle]="styleBar(character.baseStats.speed, 'speed')" class="filled"></div>
+    </div>
+  </div>
+</div>

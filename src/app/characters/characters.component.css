@@ -1,0 +1,34 @@
+* {
+    font-family: 'Lucida Sans', sans-serif;
+}
+
+.characters {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.characters li {
+  margin: .3em;
+  cursor: pointer;
+  background-color: rgb(51, 139, 184);;
+  height: 1.6em;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters li:hover {
+  background-color: rgb(23, 102, 141);
+  left: .1em;
+}
+
+.characters li a {
+  color: rgb(139, 14, 14);
+  text-decoration: none;
+}
+
+.characters li:hover a {
+  color: rgb(201, 54, 54);
+}
